@@ -11,13 +11,18 @@
     <name>Metrics Integration with JMX</name>
     <packaging>bundle</packaging>
     <description>
-        A set of classes which allow you to report metrics via JMX.
+        A set of classes which allow you to report metrics and health checks via JMX.
     </description>
 
     <dependencies>
         <dependency>
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-healthchecks</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
